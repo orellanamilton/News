@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C07A72542651BF8B009E5234 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C07A72532651BF8B009E5234 /* Kingfisher */; };
+		C07A72562651BFDF009E5234 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A72552651BFDF009E5234 /* UIImageViewExtension.swift */; };
 		C09FA39726506BE500201C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09FA39626506BE500201C16 /* AppDelegate.swift */; };
 		C09FA39926506BE500201C16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09FA39826506BE500201C16 /* SceneDelegate.swift */; };
 		C09FA39B26506BE500201C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09FA39A26506BE500201C16 /* ViewController.swift */; };
 		C09FA39E26506BE500201C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09FA39C26506BE500201C16 /* Main.storyboard */; };
 		C09FA3A026506BE500201C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09FA39F26506BE500201C16 /* Assets.xcassets */; };
 		C09FA3A326506BE500201C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09FA3A126506BE500201C16 /* LaunchScreen.storyboard */; };
+		C09FA3B026506D3C00201C16 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C09FA3AF26506D3C00201C16 /* Alamofire */; };
+		C09FA3B426506DB100201C16 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09FA3B326506DB100201C16 /* NewsData.swift */; };
+		C0CA54322650918D00ECBFF1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA54302650918D00ECBFF1 /* NewsTableViewCell.swift */; };
+		C0CA54332650918D00ECBFF1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0CA54312650918D00ECBFF1 /* NewsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C07A72552651BFDF009E5234 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		C09FA39326506BE400201C16 /* NewsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09FA39626506BE500201C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C09FA39826506BE500201C16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		C09FA39F26506BE500201C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C09FA3A226506BE500201C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C09FA3A426506BE500201C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C09FA3B326506DB100201C16 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		C0CA54302650918D00ECBFF1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		C0CA54312650918D00ECBFF1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07A72542651BF8B009E5234 /* Kingfisher in Frameworks */,
+				C09FA3B026506D3C00201C16 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,43 @@
 		C09FA39526506BE400201C16 /* NewsAPP */ = {
 			isa = PBXGroup;
 			children = (
+				C09FA3AD26506CDD00201C16 /* Controller */,
+				C09FA3AC26506CD800201C16 /* View */,
+				C09FA3AA26506CC900201C16 /* Model */,
 				C09FA39626506BE500201C16 /* AppDelegate.swift */,
 				C09FA39826506BE500201C16 /* SceneDelegate.swift */,
-				C09FA39A26506BE500201C16 /* ViewController.swift */,
-				C09FA39C26506BE500201C16 /* Main.storyboard */,
 				C09FA39F26506BE500201C16 /* Assets.xcassets */,
 				C09FA3A126506BE500201C16 /* LaunchScreen.storyboard */,
 				C09FA3A426506BE500201C16 /* Info.plist */,
 			);
 			path = NewsAPP;
+			sourceTree = "<group>";
+		};
+		C09FA3AA26506CC900201C16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C09FA3B326506DB100201C16 /* NewsData.swift */,
+				C07A72552651BFDF009E5234 /* UIImageViewExtension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C09FA3AC26506CD800201C16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C09FA39C26506BE500201C16 /* Main.storyboard */,
+				C0CA54302650918D00ECBFF1 /* NewsTableViewCell.swift */,
+				C0CA54312650918D00ECBFF1 /* NewsTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C09FA3AD26506CDD00201C16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C09FA39A26506BE500201C16 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,10 @@
 			dependencies = (
 			);
 			name = NewsAPP;
+			packageProductDependencies = (
+				C09FA3AF26506D3C00201C16 /* Alamofire */,
+				C07A72532651BF8B009E5234 /* Kingfisher */,
+			);
 			productName = NewsAPP;
 			productReference = C09FA39326506BE400201C16 /* NewsAPP.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +154,10 @@
 				Base,
 			);
 			mainGroup = C09FA38A26506BE400201C16;
+			packageReferences = (
+				C09FA3AE26506D3C00201C16 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C07A72522651BF8B009E5234 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C09FA39426506BE400201C16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +174,7 @@
 			files = (
 				C09FA3A326506BE500201C16 /* LaunchScreen.storyboard in Resources */,
 				C09FA3A026506BE500201C16 /* Assets.xcassets in Resources */,
+				C0CA54332650918D00ECBFF1 /* NewsTableViewCell.xib in Resources */,
 				C09FA39E26506BE500201C16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +188,10 @@
 			files = (
 				C09FA39B26506BE500201C16 /* ViewController.swift in Sources */,
 				C09FA39726506BE500201C16 /* AppDelegate.swift in Sources */,
+				C07A72562651BFDF009E5234 /* UIImageViewExtension.swift in Sources */,
+				C0CA54322650918D00ECBFF1 /* NewsTableViewCell.swift in Sources */,
 				C09FA39926506BE500201C16 /* SceneDelegate.swift in Sources */,
+				C09FA3B426506DB100201C16 /* NewsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +393,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C07A72522651BF8B009E5234 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+		C09FA3AE26506D3C00201C16 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C07A72532651BF8B009E5234 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C07A72522651BF8B009E5234 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C09FA3AF26506D3C00201C16 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C09FA3AE26506D3C00201C16 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C09FA38B26506BE400201C16 /* Project object */;
 }
