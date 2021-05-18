@@ -93,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				C09FA39C26506BE500201C16 /* Main.storyboard */,
-				C0CA54302650918D00ECBFF1 /* NewsTableViewCell.swift */,
 				C0CA54312650918D00ECBFF1 /* NewsTableViewCell.xib */,
 			);
 			path = View;
@@ -103,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C09FA39A26506BE500201C16 /* ViewController.swift */,
+				C0CA54302650918D00ECBFF1 /* NewsTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
