@@ -27,10 +27,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         NewsAPI()
     }
-    
-    override open var shouldAutorotate: Bool {
-        return false
-    }
+
     
     func NewsAPI() {
         let urlString = "https://newsapi.org/v2/top-headlines?country=us&apiKey=04f4ad8a121c411fb32fcb72e232de5f"
@@ -80,34 +77,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     
-}
-
-extension UINavigationController {
-    
-    override open var shouldAutorotate: Bool {
-        get {
-            if let visibleVC = visibleViewController {
-                return visibleVC.shouldAutorotate
-            }
-            return super.shouldAutorotate
-        }
-    }
-    
-    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
-        get {
-            if let visibleVC = visibleViewController {
-                return visibleVC.preferredInterfaceOrientationForPresentation
-            }
-            return super.preferredInterfaceOrientationForPresentation
-        }
-    }
-    
-    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask{
-        get {
-            if let visibleVC = visibleViewController {
-                return visibleVC.supportedInterfaceOrientations
-            }
-            return super.supportedInterfaceOrientations
-        }
-    }
 }
