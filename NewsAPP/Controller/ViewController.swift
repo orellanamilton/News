@@ -64,6 +64,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell") as! NewsTableViewCell
         cell.configure(for: news)
+        cell.selectionStyle = .none
         return cell
     }
     
