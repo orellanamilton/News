@@ -1,6 +1,6 @@
 # News 📰
 
-App de noticias desarrolada con Swift 🗞
+App de noticias desarrollada con Swift 🗞
 <br/>
 
 La app está desarrollada con [News API](https://newsapi.org/)
